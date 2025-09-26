@@ -6,6 +6,7 @@
     border: 0;
     font-family: 'Raleway';
     color: var(--cor5);
+
 }
 :root{
     --cor1:#36BFB1;
@@ -16,16 +17,18 @@
     --cor6:#275950;
     --cor7:#F2E3D5;
 }
-body{
-    width: 100vw;
-    height: 100vh;
+html, body{
+    width: 100%;
+    min-height: 100vh;
+    max-height: 100vh;
+    overflow-x: hidden;
     background-image: linear-gradient(to bottom, var(--cor1), var(--cor2), var(--cor3), var(--cor4));
 }
 #conteudo{
     height: 310px;
 }
 div > .minhafoto{
-    height: 300px;
+    width: 300px;
     border-radius: 50%;
     position: relative;
     top: 0%;
@@ -44,8 +47,9 @@ main > a#link{
     text-align: center;
     text-decoration: none;
     display: block;
-    margin: 60px;
-    padding: 15px;
+    margin: 4.5vh 15vw;
+    padding: 4.5vh 15vw;
+    border-radius: 20px;
     background-color: var(--cor6);
  }
  main a#link:hover{
@@ -57,10 +61,11 @@ main > a#link{
     transition: transform 0.3s, border 0.5s;
  }
 main > a#link > img{
-    width: 100px;
+    width: 80px;
  }
  footer p{
     color: var(--cor7);
+    margin: 20px;
  }
  footer p > a{
     color: white;
